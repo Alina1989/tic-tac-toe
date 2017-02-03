@@ -1,10 +1,10 @@
 class TicTacToe {
 
     constructor() {
- 
+        this.area = [];
         this.player = 'x';
         this.filledArea = 0;
-        this.area = [];
+        
         for (var i = 0; i < 3; i++)
         {
             this.area[i] = [];
@@ -22,8 +22,8 @@ class TicTacToe {
     }
 
     nextTurn(rowIndex, columnIndex) {
-        if (this.area (rowIndex, columnIndex) === null)
-            return this.area (rowIndex, columnIndex) = this.player;
+        if (this.area === null)
+            return this.area === this.player;
         if (this.player = 'x')
             return this.player = 'o'
         else 
