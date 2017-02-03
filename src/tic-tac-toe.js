@@ -1,5 +1,9 @@
 class TicTacToe {
+<<<<<<< HEAD
     constructor() {
+=======
+   constructor() {
+>>>>>>> ba8bd6d56ec76b13cd9aaa4e6edf7ef917bc9bd5
         this.player = 'x';
         this.filledArea = 0;
         this.area = [];
@@ -91,5 +95,4 @@ class TicTacToe {
 
     }
 }
-
 module.exports = TicTacToe;
