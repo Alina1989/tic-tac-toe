@@ -75,7 +75,7 @@ class TicTacToe {
 
     }
 
-    isDraw() { if this.noMoreTurns() === 
+    isDraw() { 
 
     }
 
