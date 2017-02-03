@@ -1,10 +1,16 @@
 class TicTacToe {
     constructor() {
-        this.area[][] = null;
         this.player = 'x';
         this.filledArea = 0;
-
-
+        this.area = [];
+        for (var i = 0; i < 3; i++)
+        {
+            this.area[i] = [];
+            for (var j = 0; j < 3; j++)
+            {
+                this.area[i][j] = null;
+            }
+        }
         
     }
 
@@ -24,10 +30,12 @@ class TicTacToe {
 
     }
 
-    isFinished() { if (this.getWinner())
-        else
-        return false
-          return this.isDraw();
+    isFinished() { if (this.getWinner() || this.isDraw()) {
+            return true;
+        }
+        else {
+            return false;
+        }
        
 
     }
