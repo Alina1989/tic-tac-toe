@@ -5,7 +5,7 @@ class TicTacToe {
         this.area = [];
         for (var i = 0; i < 3; i++)
         {
-            this.matrix[i] = [];
+            this.area[i] = [];
             for (var j = 0; j < 3; j++)
             {
                 this.area[i][j] = null;
