@@ -17,15 +17,15 @@ class TicTacToe {
     }
 
     getCurrentPlayerSymbol() { 
-        if (this.player)
-            return this.player = 'x';
+        return this.player;
+           
 
     }
 
     nextTurn(rowIndex, columnIndex) { 
 
-        if (this.area)
-            return this.area === this.player;
+        if (this.area[i][j])
+            return this.area[i][j] === this.player;
         if (this.player = 'x')
             return this.player = 'x'
         else 
@@ -48,26 +48,26 @@ class TicTacToe {
 
         if ( this.area[0][0] === this.area[0][1] === this.area[0][2] === 'x' || this.area[1][0] === this.area[1][1] === this.area[1][2] === 'x' || 
         this.area[2][0] === this.area[2][1] === this.area[2][2] === 'x')
-            return this.getWinner
+            return this.getWinner()
         else if (this.area[0][0] === this.area[0][1] === this.area[0][2] === 'o' || this.area[1][0] === this.area[1][1] === this.area[1][2] === 'o' || 
         this.area[2][0] === this.area[2][1] === this.area[2][2] === 'o')
-            return this.getWinner;
+            return this.getWinner();
 
         // columns
 
         if ( this.area[0][0] === this.area[1][0] === this.area[2][0] === 'x' || this.area[0][1] === this.area[1][1] === this.area[2][1] === 'x' || 
         this.area[2][0] === this.area[2][1] === this.area[2][2] === 'x')
-            return this.getWinner
+            return this.getWinner()
         else if (this.area[0][0] === this.area[1][0] === this.area[2][0] === 'o' || this.area[0][1] === this.area[1][1] === this.area[2][1] === 'o' || 
         this.area[0][2] === this.area[1][2] === this.area[2][2] === 'o')
-            return this.getWinner;
+            return this.getWinner();
 
         // diagonals
 
          if (this.area[0][0] === this.area[1][1] === this.area[2][2] === 'o' || this.area[2][0] === this.area[1][1] === this.area[0][2] === 'o')
-            return getWinner
+            return getWinner()
         else if (this.area[0][0] === this.area[1][1] === this.area[2][2] === 'o' || this.area[2][0] === this.area[1][1] === this.area[0][2] === 'o')
-            return this.getWinner; 
+            return this.getWinner(); 
 
 
 
