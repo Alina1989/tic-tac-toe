@@ -17,7 +17,8 @@ class TicTacToe {
     }
 
     getCurrentPlayerSymbol() { 
-        return this.player;
+        if (this.player)
+            return this.player = 'x';
 
     }
 
