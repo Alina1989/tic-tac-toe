@@ -93,7 +93,9 @@ class TicTacToe {
 
     getFieldValue(rowIndex, colIndex) {
 
-        return this.area[rowIndex][colIndex];
+        
+        if (this.area[rowIndex][colIndex] === null)
+            return this.getCurrentPlayerSymbol() === 'x'
 
     }
 }
