@@ -2,7 +2,7 @@ class TicTacToe {
 
     constructor() {
         this.area = [];
-        this.player = 'x';
+        this.player = null;
         this.filledArea = 0;
         
         for (var i = 0; i < 3; i++)
@@ -16,8 +16,10 @@ class TicTacToe {
         
     }
 
-    getCurrentPlayerSymbol() {
-        return this.player;
+    getCurrentPlayerSymbol() { 
+        if (this.player === null)
+            return this.player === 'x'
+        else return this.player === 'o';
 
     }
 
