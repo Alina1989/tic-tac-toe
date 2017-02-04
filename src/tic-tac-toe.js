@@ -21,13 +21,14 @@ class TicTacToe {
 
     }
 
-    nextTurn(rowIndex, columnIndex) {
-        if (this.area === null)
+    nextTurn(rowIndex, columnIndex) { 
+
+        if (this.area)
             return this.area === this.player;
         if (this.player = 'x')
-            return this.player = 'o'
+            return this.player = 'x'
         else 
-            return this.player = 'x';
+            return this.player = 'o';
     
 
     }
