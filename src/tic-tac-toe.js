@@ -17,9 +17,7 @@ class TicTacToe {
     }
 
     getCurrentPlayerSymbol() { 
-        if (this.player)
-            return 'x'
-        else return this.player === 'o';
+        return this.player;
 
     }
 
@@ -93,6 +91,8 @@ class TicTacToe {
     }
 
     getFieldValue(rowIndex, colIndex) {
+
+        return this.area[rowIndex][colIndex];
 
     }
 }
