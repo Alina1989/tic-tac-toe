@@ -24,8 +24,8 @@ class TicTacToe {
 
     nextTurn(rowIndex, columnIndex) { 
 
-        if (this.area[i][j])
-            return this.area[i][j] === this.player;
+        if (this.area[rowIndex][columnIndex])
+            return this.area[rowIndex][columnIndex] === this.player;
         if (this.player = 'x')
             return this.player = 'x'
         else 
