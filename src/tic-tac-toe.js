@@ -26,7 +26,7 @@ class TicTacToe {
 
         if (this.area[rowIndex][columnIndex])
             return this.area[rowIndex][columnIndex] === this.player;
-        if (this.player = 'x')
+        if (this.player)
             return this.player = 'x'
         else 
             return this.player = 'o';
