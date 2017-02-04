@@ -95,7 +95,7 @@ class TicTacToe {
 
         
         if (this.area[rowIndex][colIndex] === null)
-            return this.getCurrentPlayerSymbol() === 'x'
+            return this.getCurrentPlayerSymbol()
 
     }
 }
